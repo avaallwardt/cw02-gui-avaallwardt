@@ -7,12 +7,26 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView_Greeting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="356dp"
+        android:layout_marginBottom="108dp"
         android:text="Goodbye, World!"
+        app:layout_constraintBottom_toTopOf="@+id/button_MyButton"
+        app:layout_constraintStart_toStartOf="@+id/button_MyButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_MyButton"
+        android:layout_width="96dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="205dp"
+        android:onClick="buttonPressed"
+        android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_Greeting" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
